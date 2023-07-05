@@ -365,7 +365,7 @@ h3 {
   grid-area: mainmn;
   background-color: rgb(213, 235, 223);
   display: grid;
-  grid-template-rows: 0.2fr 0.1fr 0.5fr 0.7fr 0.7fr 0.7fr 0.2fr;
+  grid-template-rows: 0.2fr 0.1fr 0.5fr 0.7fr 0.7fr 0.7fr;
   grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
   grid-template-areas:
     ". s1 s1 ."
@@ -373,8 +373,7 @@ h3 {
     ". s3 s3 ."
     ". s4 s4 ."
     ". s5 s5 ."
-    ". s6 s6 ."
-    ". s7 s7 .";
+    ". s6 s6 .";
 }
 
 #sec1 {
@@ -502,9 +501,7 @@ h3 {
   color: rgb(38, 71, 83);
   font-size: 0.9rem;
 }
-#sec7 {
-  grid-area: s7;
-}
+
 @media screen and (max-width: 425px) {
   #body-indx {
     grid-template-rows: 0.2fr 1fr 0.2fr;
