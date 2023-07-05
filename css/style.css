@@ -1,0 +1,737 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* --------- PAG INDEX -------------------- */
+#body-indx {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  grid-template-columns: 2 (1fr);
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+}
+#body-indx header {
+  grid-area: header;
+  background-color: rgb(38, 71, 83);
+}
+.navbar-nav {
+  font-size: 1rem;
+  font-family: "Noto Serif Ottoman Siyaq", serif;
+}
+#body-indx main {
+  grid-area: main;
+  background-color: rgb(213, 235, 223);
+  display: grid;
+  grid-template-rows: 0.1fr 1fr 0.1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    ". ."
+    "section1 section2"
+    ". ."
+    "section3 section3";
+}
+#section-1 {
+  grid-area: section1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+#section-1 div h1 {
+  font-family: "Londrina Solid", cursive;
+  color: rgb(38, 71, 83);
+  font-size: 60px;
+}
+li {
+  list-style: none;
+}
+#botones ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+#botones ul li a {
+  display: inline-block;
+  width: 200px;
+  line-height: 50px;
+  text-decoration: none;
+  background-color: rgb(231, 197, 107);
+  text-align: center;
+  border-radius: 7px;
+  font-family: "Noto Serif Ottoman Siyaq", serif;
+  color: rgb(82, 118, 134);
+}
+#section-2 {
+  grid-area: section2;
+}
+#section-2 div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#section-2 div img#img1 {
+  width: 550px;
+  height: 550px;
+  border-radius: 20px;
+  margin-left: 110px;
+}
+#section-2 div img#img2 {
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  left: 4%;
+  bottom: -10%;
+}
+
+#section-3 {
+  grid-area: section3;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#section-3 div#txt {
+  width: 600px;
+  height: 200px;
+  font-family: "Noto Serif Ottoman Siyaq", serif;
+  color: rgb(82, 118, 134);
+  font-size: 1.3rem;
+}
+#section-3 div#hrs {
+  background-color: rgba(255, 255, 255, 0.25);
+  align-self: center;
+  color: rgb(38, 71, 83);
+  padding: 35px;
+  border-radius: 7px;
+  font-family: "Noto Serif Ottoman Siyaq", serif;
+  font-size: 1.1rem;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: rgb(43, 158, 142);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.footer div {
+  color: white;
+}
+.footer div p {
+  font-size: 0.8rem;
+}
+.footer div p a i {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+/* ------------ PG PLANDETOX-------------------- */
+#body-pd {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  grid-template-columns: 2fr 2fr;
+  grid-template-areas:
+    "headerpd headerpd"
+    "mainpd mainpd"
+    "footer footer";
+}
+
+#body-pd header {
+  grid-area: headerpd;
+  background-color: rgb(38, 71, 83);
+}
+
+#body-pd main {
+  grid-area: mainpd;
+  background-color: rgb(213, 235, 223);
+  display: grid;
+  grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+  grid-template-columns: 0.1fr 2fr 0.1fr 1fr 0.1fr;
+  grid-template-areas:
+    ". . . . ."
+    ". section-pd . section-cr ."
+    ". section-pd . section-cr ."
+    ". . . . .";
+}
+#section-carrucel {
+  grid-area: section-cr;
+}
+#section-pd {
+  grid-area: section-pd;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+}
+#body-pd main section div h1 {
+  font-family: "Londrina Solid", cursive;
+  color: rgb(38, 71, 83);
+}
+#body-pd main section div h2 {
+  font-family: "Londrina Solid", cursive;
+  color: rgb(38, 71, 83);
+}
+#body-pd main section div p {
+  color: rgb(38, 71, 83);
+  font-family: "Noto Serif Ottoman Siyaq", serif;
+  font-size: 1rem;
+}
+.imgpd {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+}
+/* --------- PAG UBICACION-------------------- */
+#body-ub {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  grid-template-columns: 2fr 2fr;
+  grid-template-areas:
+    "headerub headerub"
+    "mainub mainub"
+    "footer footer";
+}
+#header-ub {
+  grid-area: headerub;
+  background-color: rgb(38, 71, 83);
+}
+#main-ub {
+  grid-area: mainub;
+  background-color: rgb(213, 235, 223);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#main-ub div h1,
+h2 {
+  font-family: "Londrina Solid", cursive;
+  color: rgb(38, 71, 83);
+}
+#main-ub div a i {
+  font-size: 40px;
+  color: rgb(231, 197, 107);
+}
+#main-ub hr {
+  width: 50%;
+  height: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 5px solid rgb(38, 71, 83);
+}
+#main-ub div img#local {
+  width: 400px;
+  height: 600px;
+  border-radius: 4px;
+}
+#main-ub div img#vector {
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  left: 30%;
+  bottom: 0%;
+}
+/* --------- PAG CONTACTO-------------------- */
+#body-ct {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  grid-template-columns: 2fr 2fr;
+  grid-template-areas:
+    "headerct headerct"
+    "mainct mainct"
+    "footer footer";
+}
+#header-ct {
+  grid-area: headerct;
+  background-color: rgb(38, 71, 83);
+}
+#main-ct {
+  grid-area: mainct;
+  background-color: rgb(213, 235, 223);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#main-ct h1 {
+  font-family: "Londrina Solid", cursive;
+  color: rgb(38, 71, 83);
+  align-self: center;
+  margin-top: 20px;
+}
+#main-ct form {
+  font-family: "Noto Serif Ottoman Siyaq", serif;
+  color: rgb(38, 71, 83);
+}
+.imp-cont {
+  border: 1px solid rgb(38, 71, 83);
+  border-radius: 3px;
+  padding: 3px;
+}
+#boton-ct {
+  display: inline-block;
+  border: 1px solid rgb(38, 71, 83);
+  font-size: 1rem;
+  font-family: "Noto Serif Ottoman Siyaq", serif;
+  color: #254452;
+  background-color: white;
+  border-radius: 7px;
+  padding: 7px;
+  width: 90px;
+  text-align: center;
+  margin-top: 10px;
+}
+/* --------- PAG NOSOTROS-------------------- */
+#body-nos {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  grid-template-columns: 2fr 2fr;
+  grid-template-areas:
+    "headernos headernos"
+    "mainnos mainnos"
+    "footer footer";
+}
+
+#header-nos {
+  grid-area: headernos;
+  background-color: rgb(38, 71, 83);
+}
+#main-nos {
+  grid-area: mainnos;
+  background-color: rgb(213, 235, 223);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#main-nos h1,
+h2,
+h3 {
+  font-family: "Londrina Solid", cursive;
+  color: rgb(38, 71, 83);
+}
+#main-nos p {
+  color: rgb(38, 71, 83);
+  font-family: "Noto Serif Ottoman Siyaq", serif;
+  font-size: 1rem;
+}
+#main-nos p strong {
+  font-size: 1.1rem;
+}
+#main-nos div img#perro {
+  width: 500px;
+  height: 600px;
+  border-radius: 50px;
+  position: relative;
+}
+#main-nos div img#paw {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 22%;
+  bottom: -20%;
+}
+#main-nos hr {
+  width: 30%;
+  height: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 5px solid rgb(38, 71, 83);
+}
+/* --------- PAG menu-------------------- */
+#body-mn {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  grid-template-columns: 2fr 2fr;
+  grid-template-areas:
+    "headermn headermn"
+    "mainmn mainmn"
+    "footer footer";
+}
+
+#body-mn header {
+  grid-area: headermn;
+  background-color: rgb(38, 71, 83);
+}
+#body-mn main {
+  grid-area: mainmn;
+  background-color: rgb(213, 235, 223);
+  display: grid;
+  grid-template-rows: 0.2fr 0.1fr 0.5fr 0.7fr 0.7fr 0.7fr 0.2fr;
+  grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+  grid-template-areas:
+    ". s1 s1 ."
+    ". s2 s2 ."
+    ". s3 s3 ."
+    ". s4 s4 ."
+    ". s5 s5 ."
+    ". s6 s6 ."
+    ". s7 s7 .";
+}
+
+#sec1 {
+  grid-area: s1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+#sec1 h1 {
+  font-family: "Londrina Solid", cursive;
+  color: #254452;
+}
+.bot {
+  display: inline-block;
+  width: 200px;
+  line-height: 50px;
+  text-decoration: none;
+  background-color: rgb(231, 197, 107);
+  text-align: center;
+  border-radius: 7px;
+  font-family: "Noto Serif Ottoman Siyaq", serif;
+  color: rgb(82, 118, 134);
+  margin-top: 20px;
+}
+
+#body-mn main #sec1 hr,
+#sec4 hr,
+#sec5 hr,
+#sec6 hr {
+  width: 30%;
+  height: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 5px solid rgb(38, 71, 83);
+  margin-top: 20px;
+}
+#sec2 {
+  grid-area: s2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sec3 {
+  grid-area: s3;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0.4fr 1fr 0.02fr 1fr 0.02fr 1fr 0.4fr;
+  grid-template-areas: ". d1 . d2 . d3 .";
+}
+#dc1 {
+  grid-area: d1;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#dc2 {
+  grid-area: d2;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+#dc3 {
+  grid-area: d3;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#sec3 strong {
+  font-family: "Londrina Solid", cursive;
+  color: rgb(38, 71, 83);
+  font-size: 1.2rem;
+}
+#sec3 p {
+  font-family: "Noto Serif Ottoman Siyaq", serif;
+  color: rgb(38, 71, 83);
+  font-size: 0.9rem;
+}
+#sec4 {
+  grid-area: s4;
+  display: flex;
+  flex-direction: column;
+}
+#sec4 h2,
+#sec5 h2,
+#sec6 h2 {
+  align-self: center;
+}
+#sec4 strong,
+#sec6 strong {
+  font-family: "Londrina Solid", cursive;
+  color: rgb(38, 71, 83);
+  font-size: 1.4rem;
+}
+#sec4 p {
+  text-align: center;
+  column-count: 2;
+  font-family: "Noto Serif Ottoman Siyaq", serif;
+  color: rgb(38, 71, 83);
+  font-size: 0.9rem;
+}
+#sec5 {
+  grid-area: s5;
+  display: flex;
+  flex-direction: column;
+}
+#sec5 p {
+  column-count: 2;
+  font-family: "Londrina Solid", cursive;
+  color: rgb(38, 71, 83);
+  text-align: center;
+  font-size: 1.4rem;
+}
+#sec6 {
+  grid-area: s6;
+  display: flex;
+  flex-direction: column;
+}
+#sec6 p {
+  column-count: 2;
+  text-align: center;
+  font-family: "Noto Serif Ottoman Siyaq", serif;
+  color: rgb(38, 71, 83);
+  font-size: 0.9rem;
+}
+#sec7 {
+  grid-area: s7;
+}
+@media screen and (max-width: 425px) {
+  #body-indx {
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-columns: 1 fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+  #body-indx main {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "section1"
+      "section3";
+  }
+  #section-1 {
+    justify-content: center;
+  }
+  #section-1 div h1 {
+    margin-top: 15px;
+  }
+  #section-2 {
+    display: none;
+  }
+  #section-1 div h1 {
+    font-size: 2rem;
+  }
+
+  #botones ul li a {
+    display: block;
+    width: 150px;
+    line-height: 35px;
+    font-size: 0.6rem;
+    margin-top: 3px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #section-3 div#txt {
+    width: 70%;
+    height: 130px;
+    font-size: 0.6rem;
+  }
+  #section-3 div#txt p {
+    display: inline-block;
+    width: 70%;
+    height: 130px;
+    margin: 15px 0px 0px 0px;
+  }
+
+  #section-3 div#hrs {
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 0.5rem;
+  }
+
+  .footer div p {
+    font-size: 0.5rem;
+  }
+  .footer div p a i {
+    font-size: 0.5rem;
+  }
+  #body-pd {
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "headerpd"
+      "mainpd"
+      "footer";
+  }
+  #body-pd main {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "section-pd";
+  }
+  #section-carrucel {
+    display: none;
+  }
+  #body-pd main section div p {
+    margin: 0px 20px 0px 20px;
+  }
+  #body-ub {
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "headerub"
+      "mainub"
+      "footer";
+  }
+  #main-ub div img#local {
+    width: 250px;
+    height: 400px;
+    border-radius: 4px;
+  }
+  #main-ub div img#vector {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+  }
+  #main-ub div a i {
+    font-size: 30px;
+  }
+  #body-nos {
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "headernos"
+      "mainnos"
+      "footer";
+  }
+
+  #main-nos p {
+    font-size: 0.6rem;
+    margin: 0px 20px 0px 20px;
+  }
+  #main-nos p strong {
+    font-size: 0.7rem;
+  }
+  #main-nos p br {
+    display: none;
+  }
+  #main-nos h2 {
+    margin-top: 20px;
+  }
+  #main-nos div img#perro {
+    width: 280px;
+    height: 400px;
+  }
+  #main-nos div img#paw {
+    width: 150px;
+    height: 150px;
+    left: 0%;
+    bottom: 10%;
+  }
+  #body-ct {
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "headerct"
+      "mainct"
+      "footer";
+  }
+
+  #main-ct h1 {
+    margin-top: 20px;
+  }
+  .imp-cont {
+    border: 1px solid rgb(38, 71, 83);
+    border-radius: 3px;
+    padding: 3px;
+  }
+  #boton-ct {
+    font-size: 0.8rem;
+    border-radius: 5px;
+    padding: 5px;
+    width: 70px;
+    margin-top: 10px;
+  }
+  input {
+    width: 90%;
+  }
+  textarea {
+    width: 90%;
+  }
+  #body-mn {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "headermn"
+      "mainmn"
+      "footer";
+  }
+  #body-mn main {
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      1fr 1fr 1fr 1fr 1fr 1fr 1fr
+      "s1"
+      "s2"
+      "s3"
+      "s4"
+      "s5"
+      "s6"
+      "s7";
+  }
+
+  #sec1 div a.bot {
+    display: block;
+    width: 150px;
+    line-height: 35px;
+    font-size: 0.8rem;
+    margin-top: 3px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #sec3 {
+    display: block;
+  }
+
+  #sec3 strong,
+  #sec4 strong,
+  #sec6 strong {
+    font-size: 1rem;
+  }
+  #sec3 p {
+    font-size: 0.8rem;
+  }
+  #sec4 p {
+    column-count: 1;
+    font-size: 0.8rem;
+  }
+  #sec5 p {
+    column-count: 2;
+    font-size: 0.9rem;
+  }
+  #sec6 {
+    grid-area: s6;
+    display: flex;
+    flex-direction: column;
+  }
+  #sec6 p {
+    column-count: 1;
+    font-size: 0.8rem;
+  }
+  #sec7 {
+    grid-area: s7;
+  }
+}
