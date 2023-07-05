@@ -511,6 +511,13 @@ h3 {
       "main"
       "footer";
   }
+  .navbar {
+    margin-left: 10px;
+  }
+  .img-fluid {
+    margin-top: 20px;
+    width: 70px;
+  }
   #body-indx main {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
